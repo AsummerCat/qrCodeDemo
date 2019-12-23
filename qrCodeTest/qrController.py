@@ -3,6 +3,10 @@ from django.http import HttpResponse
 import qrcode
 from django.utils.six import BytesIO
 
+'''
+django具体实现类
+传输data 图片流 返回html页面
+'''
 
 def generate_qrcode(request, data):
     img = qrcode.make(data)
